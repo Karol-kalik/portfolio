@@ -1,0 +1,13 @@
+.footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 7vh;
+  text-align: center;
+  color:white;
+  font-size: 4vh;
+  line-height: 7vh;
+  font-family: 'Dancing Script',cursive;
+}

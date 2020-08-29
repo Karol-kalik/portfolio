@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1700px) {
+  .portfolioDiv {
+    margin-top: 2vh;
+    width: 35vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  p.imgInfo {
+    margin-top: 1vh;
+    font-size: 30px;
+  }
+  .usedElements {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+  }
+  div.usedElements img.skillsIco {
+    width: 6vw;
+    height: 6vw;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .portfolioStart {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    flex-wrap: wrap;
+  }
+  .portfolioDiv {
+    margin-top: 2vh;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  img.imgPortfolio {
+    margin-top: 1vh;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 96vw;
+    height: 40vh;
+  }
+
+  .titleBox {
+    margin: 0;
+    width: 96vw;
+    border-radius: 0;
+    box-shadow: 0;
+  }
+  p.imgInfo {
+    margin-top: 1vh;
+    font-size: 35px;
+    width: 96vw;
+  }
+
+  .usedElements {
+    display: flex;
+    justify-content: center;
+    width: 96vw;
+    margin-bottom: 2vh;
+  }
+
+  div.usedElements img.skillsIco {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+

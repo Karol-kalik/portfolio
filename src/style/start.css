@@ -1,0 +1,111 @@
+/* Strona startowa (opisy) */
+.frontPage {
+  width: 90vw;
+  margin-top: 9vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 91vh;
+  justify-content: space-between;
+
+}
+
+div.info {
+  max-width: 35%;
+}
+div.info:nth-child(1),
+div.info:nth-child(2) {
+  padding-top:5vh;
+}
+ h1.start.left {
+  margin: 0;
+  padding: 0;
+  transform: translate(-100%, 0);
+  transition: all .5s ease-in-out;
+}
+ h1.start.right{
+   display: block;
+  margin: 0;
+  transform:  translate(150%, 0);
+  transition: all .5s ease-in-out;
+}
+p.start{
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  transform: scale(0);
+  transition: all .5s ease-in-out;
+}
+p.start.move {
+  transform: scale(1);
+}
+
+h1.left.move{
+  transform: translate(2%, 0);
+}
+h1.right.move{
+  transform: translate(2%, 0);
+}
+button.movePage {
+  font-size: 40px;
+  line-height: 40px;
+  position: absolute;
+  cursor: pointer;
+  background-color: unset;
+  border: none;
+  left: calc(45vw - 15px);
+  bottom: 8vh;
+  width: 50px;
+  height: 50px;
+}
+button i.fas.fa-arrow-down{
+  position: absolute;
+  left:15%;
+  top:-10%;
+  animation: move 1s  infinite alternate;
+}
+button i.fas.fa-arrow-down:hover{
+  animation-play-state: paused;
+  color:gray;
+}
+@keyframes move {
+
+   0%{
+     top:-20%;
+   }
+   40%{
+     top:25%;
+   }
+   60% {
+     top: 5%;
+   }
+   100% {
+     top: 25%;
+   }
+}
+
+div.line {
+  position: absolute;
+  left: -11vh;
+  bottom:0;
+  width: 100vw;
+  background-color: rgb(94, 93, 93);
+  height: 5px;
+  box-shadow: 0px -10px 10px 0px rgba(94, 93, 93, 0.75);
+}
+
+ul{
+    font-size: 22px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+}
+ul.move{
+  transform: scale(1);
+}
+/* KONIEC PIERWSZEGO WIDOKU STRONY STARTOWEJ */
+

@@ -1,0 +1,206 @@
+@media only screen and (max-width: 1000px) {
+  .frontPage {
+    max-width: 100vw;
+    margin-top: 9vh;
+    position: relative;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  div.info {
+    min-width: 80vw;
+    padding-top: 2vh;
+  }
+  div.info:nth-child(4){
+    padding-bottom: 10vh;
+  }
+  p.start {
+    font-size: 30px;
+  }
+  h1.start{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  button.movePage {
+    display: none;
+  }
+
+  div.line {
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+
+  }
+  ul {
+    font-size: 30px;
+  }
+
+  /* startPageTwo */
+
+
+.frontPageTwo {
+  display: flex;
+  min-width: 100vw;
+  min-height: 84vh;
+}
+
+.startPartTwoLeft {
+  display: none;
+}
+
+
+.startPartTwoRight {
+  padding-top: 3vh;
+  min-width: 100vw;
+  text-align: center;
+}
+
+.startTwoInfo {
+  font-size: 40px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  max-width: 100vw;
+}
+div.skills span img {
+  padding: 2vh 2vw;
+  width: 15vw;
+  height: 15vw;
+}
+
+.tooltiptext {
+  display: none;
+}
+}
+
+
+@media only screen and (max-width: 1350px) {
+  .frontPage {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 10vw;
+  }
+  div.info {
+    max-width: 45%;
+  }
+  p.start {
+    font-size: 25px;
+  }
+  button.movePage {
+    left: calc(42vw - 15px);
+  }
+
+/* Start Page Two */
+
+
+  .startPartTwoLeft {
+    min-width: 30vw;
+  }
+
+  .slash {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2vw;
+    height: 150vh;
+    background-color: black;
+  }
+
+  div.slashBox {
+    transform: rotate(25deg)translate(-50vw, -34vh);
+  }
+
+  div.slashBox.move {
+    transform: rotate(19deg) translate(-20vw, -34vh);
+  }
+
+  img.stonks {
+    width: 21vw;
+    margin: 10vh 0vw;
+  }
+
+  .startPartTwoRight {
+    min-width: 70vw;
+  }
+
+  .startTwoInfo {
+    font-size: 40px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    max-width: 60vw;
+  }
+
+  div.skills span img {
+    padding: 1vh 1vw;
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 5vw;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: -3vh;
+    left: 5vw;
+    margin-left: -3vw;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #555 transparent transparent;
+    transform: rotate(180deg);
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+@media only screen and (max-height: 700px) {
+
+    div.slashBox {
+      transform: rotate(25deg)translate(-50vw, -34vh);
+    }
+
+    div.slashBox.move {
+      transform: rotate(20deg) translate(-20vw, -34vh);
+    }
+
+    img.stonks {
+      width: 20vw;
+      margin: 7vh 0vw;
+    }
+}

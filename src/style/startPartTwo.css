@@ -1,0 +1,118 @@
+.frontPageTwo{
+  display: flex;
+  min-width: 100vw;
+  min-height: 84vh;
+}
+
+.startPartTwoLeft{
+  min-width: 50vw;
+  min-height: 85vh;
+  overflow: hidden;
+  position: relative;
+}
+.slash{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2vw;
+  height: 150vh;
+  background-color: black;
+}
+div.slashBox{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80vw;
+  height: 150vh;
+  background-color: white;
+  transform:rotate(25deg)translate(-50vw, -34vh);
+  transition: transform 0.5s ease-in-out;
+}
+div.slashBox.move{
+transform:rotate(25deg) translate(-20vw, -34vh);
+}
+img.stonks {
+  position: absolute;
+  z-index: 1;
+  width: 30vw;
+  margin: 10vh 5vw;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+img.stonks.move {
+  opacity: 1;
+}
+.startPartTwoRight{
+  padding-top: 10vh ;
+  min-width: 50vw;
+  text-align: center;
+}
+.startTwoInfo{
+  transform:translate(100%, 0%);
+  transition: transform 0.5s ease-in-out;
+}
+.startTwoInfo.move{
+  transform:translate(0, 0);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  max-width: 60vw;
+
+}
+
+div.skills span img{
+  padding: 2vh 2vw;
+  width: 5vw;
+  height: 5vw;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+div.skills span img.move {
+  transform: scale(1);
+}
+
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 5vw;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: -3vh;
+  left: 5vw;
+  margin-left: -3vw;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #555 transparent transparent;
+  transform: rotate(180deg);
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

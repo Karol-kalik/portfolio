@@ -1,0 +1,21 @@
+.fa-github:hover{
+    color:black;
+}
+.fa-github{
+    color:#333;
+    cursor: pointer;
+}
+.fa-linkedin:hover{
+    color:black;
+}
+.fa-linkedin{
+    color:#2867B2;
+    cursor: pointer;
+}
+div i.fas.fa-envelope {
+    color:#D44638;
+    cursor: pointer;
+}
+div i.fas.fa-envelope:hover {
+    color:#B23121;
+  }
