@@ -1,67 +1,141 @@
 .contactPage{
     padding: 0;
     margin-top:9vh;
+    min-height: 84vh;
+}
+.contactBox{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    width: 50vw;
+    height: 30vh;
+    background-color: #3a90b8;
+    border: 2px solid #4ab8eb;
+    border-radius: 10px;
     display: flex;
-    max-height: 90vh;
+    transition: all .8s;
+    opacity: 0;
 }
-.contactLeft{
-    height: 84vh;
-    width: 30%;
+.contactBox.show{
+    opacity: 1;
 }
-img.avatar{
-    margin-top:10vh;
-    margin-left: 20%;
-    width: 20vw;
-    border-radius: 50%;
-    transform: scale(0) translate(30%, 0);
-    transition: all .4s ease-in-out;
+.contactBox.move {
+    top: 30%;
 }
-img.avatar.move{
-    transform: scale(1) translate(30%, 0);
-}
+  /* #B23121
+  #D44638 */
+.portfolioImg{
+    position: relative;
+    width: 15vw;
 
-.contactRight{
-    padding-top: 20vh;
-    text-align: center;
+}
+.portfolioImg img {
+    /* display: block; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
     width: 70%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 35vh;
+    height: 70%;
+    border-radius: 50%;
 }
-.contactH1{
-    font-size: 50px;
-    width: 100%;
-    height: 0;
-    padding: 0;
-    transition: all 0.4s ease-in-out;
-    transform: translate(100%,0);
+.contactInfo{
+    font-size: 18px;
+    width: 70%;
+    margin-top:6%;
 }
-.contactH1.move{
-    transform: translate(0,0);
-}
-.contactIco{
-    font-size: 70px;
-    padding: 0 2vw;
+.contactInfo p,
+.contactInfo h1{
+    font-size: 2vw;
     margin: 0;
-    transform: scale(0);
-    transition: all .2s ease-in;
+    padding: 0;
+    color:white;
 }
-.contactIco.move{
-    transform: scale(1);
+.contactBtn{
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    line-height: 6vh;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 60%);
+    width: 30vw;
+    height: 6vh;
+    background-color: #3a90b8;
+    border: 2px solid #4ab8eb;
+    border-radius: 10px;
+    color:white;
+    transition: all .6s ;
+}
+.contactBtn.move{
+    width: 3vw;
+    height: 3vw;
+    line-height: 3vw;
+    left: 95%;
+    bottom: 20%;
+    border-radius: 50%;
+    color:black;
+    border: none;
 }
 
-.tooltip .tooltiptext.contactTip {
-    width: 15vw;
-    padding: 5px 0;
-    bottom: -1vh;
-    left: 0vw;
-    margin-left: -3vw;
-  }
-.tooltip .tooltiptext.contactAvatar {
-    width: 15vw;
-    padding: 5px 0;
-    bottom: -7vh;
-    left: 12vw;
-    margin-left: 1vw;
-  }
+.infoBox{
+    display: none;
+    position: absolute;
+    left: 50%;
+    width: 40vw;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    color:white;
+    font-size: 3vw;
+    line-height: 10vh;
+    cursor: pointer;
+}
+.infoBox a{
+    display: block;
+    color:white;
+    width: 100%;
+    height: 100%;
+    font-size: 3vw;
+}
+.infoBox.move{
+    display: block;
+}
+.infoBox i.fas.fa-envelope {
+    color:white;
+}
+.infoBox i.fas.fa-envelope:hover {
+    color:white;
+}
+
+.infoBox  span {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%)
+}
+
+.infoBox.mail{
+    background-color: #B23121;
+    top: 130%;
+}
+.infoBox.mail:hover{
+    background-color: rgb(153, 35, 35);
+}
+.infoBox.github {
+    background-color: #24292e;
+    top: 185%;
+
+}
+.infoBox.github:hover {
+    background-color: black;
+}
+.infoBox.linkedin {
+    background-color: #15acff;
+    top: 240%;
+}
+.infoBox.linkedin:hover {
+    background-color: #005b8e;
+}

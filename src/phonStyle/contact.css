@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1000px) {
+  .contactPage {
+    padding: 0;
+    margin-top: 9vh;
+    min-height: 130vh;
+  }
+  .contactBox {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 95vw;
+    height: 40vh;
+  }
+  .portfolioImg {
+    position: relative;
+    width: 30%;
+  }
+
+  .portfolioImg img {
+    width: 80%;
+    height: 80%;
+  }
+  .contactInfo p,
+  .contactInfo h1 {
+    font-size: 5vw;
+
+  }
+  .contactInfo {
+    width: 70%;
+  }
+  .contactBtn {
+    font-size: 35px;
+    line-height: 8vh;
+    width: 47vw;
+    height: 8vh;
+  }
+  .infoBox {
+    width: 80vw;
+    height: 20vh;
+    color: white;
+    font-size: 8vw;
+    line-height: 20vh;
+  }
+
+  .infoBox a {
+    color: white;
+    font-size: 8vw;
+    line-height: 20vh;
+  }
+
+
+
+  .infoBox i.fas.fa-envelope {
+    color: white;
+  }
+
+
+.infoBox span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolioImg {
+      display: none;
+    }
+    .contactInfo p,
+    .contactInfo h1 {
+      font-size: 7vw;
+      text-align: center;
+    }
+
+    .contactInfo {
+      width: 100%;
+    }
+}
