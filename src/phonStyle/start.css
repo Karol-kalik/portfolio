@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .frontPage {
     max-width: 100vw;
     margin-top: 9vh;
@@ -8,17 +8,21 @@
     margin-right: 0;
     text-align: left;
   }
+
   div.info {
     min-width: 80vw;
     padding-top: 2vh;
   }
-  div.info:nth-child(4){
+
+  div.info:nth-child(4) {
     padding-bottom: 10vh;
   }
+
   p.start {
     font-size: 30px;
   }
-  h1.start{
+
+  h1.start {
     font-size: 40px;
     text-align: center;
   }
@@ -33,6 +37,7 @@
     width: 100vw;
 
   }
+
   ul {
     font-size: 30px;
   }
@@ -40,44 +45,45 @@
   /* startPageTwo */
 
 
-.frontPageTwo {
-  display: flex;
-  min-width: 100vw;
-  min-height: 84vh;
-}
+  .frontPageTwo {
+    display: flex;
+    min-width: 100vw;
+    min-height: 84vh;
+  }
 
-.startPartTwoLeft {
-  display: none;
-}
+  .startPartTwoLeft {
+    display: none;
+  }
 
 
-.startPartTwoRight {
-  padding-top: 3vh;
-  min-width: 100vw;
-  text-align: center;
-}
+  .startPartTwoRight {
+    padding-top: 3vh;
+    min-width: 100vw;
+    text-align: center;
+  }
 
-.startTwoInfo {
-  font-size: 40px;
-}
+  .startTwoInfo {
+    font-size: 40px;
+  }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  max-width: 100vw;
-}
-div.skills span img {
-  padding: 2vh 2vw;
-  width: 15vw;
-  height: 15vw;
-}
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 100vw;
+  }
 
-.tooltiptext {
-  display: none;
-}
+  div.skills span img {
+    padding: 2vh 2vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .tooltiptext {
+    display: none;
+  }
 }
 
 
@@ -87,17 +93,20 @@ div.skills span img {
     margin-left: 5vw;
     margin-right: 10vw;
   }
+
   div.info {
     max-width: 45%;
   }
+
   p.start {
     font-size: 25px;
   }
+
   button.movePage {
     left: calc(42vw - 15px);
   }
 
-/* Start Page Two */
+  /* Start Page Two */
 
 
   .startPartTwoLeft {
@@ -189,18 +198,40 @@ div.skills span img {
   }
 
 }
-@media only screen and (max-height: 700px) {
 
-    div.slashBox {
-      transform: rotate(25deg)translate(-50vw, -34vh);
-    }
+@media only screen and (max-height: 1024px) {
+  .startPartTwoLeft {
+    display: none;
+  }
 
-    div.slashBox.move {
-      transform: rotate(20deg) translate(-20vw, -34vh);
-    }
+  .startPartTwoRight {
+    padding-top: 3vh;
+    min-width: 100vw;
+    text-align: center;
+  }
 
-    img.stonks {
-      width: 20vw;
-      margin: 7vh 0vw;
-    }
+  .startTwoInfo {
+    font-size: 40px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    max-width: 100vw;
+  }
+
+  div.skills span img {
+    padding: 2vh 2vw;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .tooltip .tooltiptext {
+    width: 10vw;
+    margin-left: -4.5vw;
+  }
+
 }
