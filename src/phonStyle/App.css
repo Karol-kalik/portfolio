@@ -1,22 +1,22 @@
 	@media only screen and (max-width: 1024px) {
-	  .app {
-	    background-color: white;
-	    background-image: none;
-	  }
+		.app {
+			background-color: white;
+			background-image: none;
+		}
 
-	  .footer {
-	    height: 10vh;
-	    font-size: 8vh;
-	    line-height: 10vh;
-	  }
+		.footer {
+			height: 10vh;
+			font-size: 8vh;
+			line-height: 10vh;
+		}
 
-	  html {
-	    overflow: auto;
-	  }
+		html {
+			overflow: auto;
+		}
 	}
 
-	@media only screen and (max-height: 1024px) {
-	  html {
-	    overflow: auto;
-	  }
+	@media only screen and (max-height: 700px) {
+		html {
+			overflow: auto;
+		}
 	}

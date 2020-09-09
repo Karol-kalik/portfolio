@@ -172,6 +172,23 @@
 }
 
 @media only screen and (max-height: 700px) {
+  .frontPage {
+    width: 90vw;
+    padding-top: 9vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 120vh;
+    justify-content: space-between;
+
+  }
+
+  .info {
+    max-width: 49%;
+  }
+
   .startPartTwoLeft {
     display: none;
   }
@@ -197,8 +214,8 @@
 
   .skills span img {
     padding: 2vh 2vw;
-    width: 30vw;
-    height: 30vw;
+    width: 8vw;
+    height: 8vw;
   }
 
   .tooltip .tooltiptext {
@@ -206,6 +223,7 @@
     margin-left: -4.5vw;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .startPartTwoLeft {
     display: none;

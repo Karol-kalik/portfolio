@@ -1,85 +1,108 @@
-.portfolioPage{
-    margin-top: 9vh;
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5vh 0;
+.portfolioFrontPage {
+  padding-top: 9vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
 }
-.portfolioStart{
-    width: 100%;
-    text-align: center;
-    min-height: 65vh;
-    font-size: 30px;
-    padding-top:25vh;
-    opacity: 0;
-    transition: opacity .5s ease-in;
+
+.portfolioStart {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
-.portfolioStart.move{
-    opacity: 1;
+
+.portfolioStart.move {
+  opacity: 1;
 }
+
 .portfolioStart h1,
-.portfolioStart p{
-    margin: 0;
+.portfolioStart p {
+  margin: 0;
 }
 
-.portfolioDiv{
-    display: flex;
-    margin: 10vh 4vw;
-    width: 25vw;
-    height: 60vh;
-    overflow:hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
+.portfolioPartTwo {
+  padding-top: 0vh;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.portfolioDiv.move{
-    opacity: 1;
-}
-img.imgPortfolio{
-    margin-top: 1vh;
-    padding: 0;
-    margin: 0;
-    display: block;
-    width: 100%;
-    height: 30vh;
-    /* object-fit: cover; */
 
+.portfolioItem {
+  display: flex;
+  margin: 5vh 4vw;
+  width: 25vw;
+  height: 60vh;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
 
+section {
+  margin: 0;
+  padding: 0;
 }
-.titleBox{
-    margin:1% 2%;
-    width: 96%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.75);
+
+.portfolioItem.move {
+  opacity: 1;
 }
-.fireEmoji{
+
+img.imgPortfolio {
+  margin-top: 1vh;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 30vh;
+  /* object-fit: cover; */
+}
+
+.titleBox {
+  margin: 1% 2%;
+  width: 96%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.fireEmoji {
+  opacity: 0.5;
+  animation: flaming 2s infinite;
+}
+
+@keyframes flaming {
+  0% {
     opacity: 0.5;
-    animation: flaming 2s infinite;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
 }
-@keyframes flaming{
-    0%{
-        opacity: 0.5;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.5;
-    }
+
+p.imgInfo {
+  font-size: 20px;
+  text-align: center;
 }
-p.imgInfo{
-    font-size: 20px;
-    text-align: center;
+
+.usedElements {
+  display: flex;
+  justify-content: space-between;
 }
-.usedElements{
-    display: flex;
-    justify-content: space-between;
-}
-div.usedElements img.skillsIco {
-      width: 2vw;
-      height: 2vw;
+
+.usedElements img.skillsIco {
+  width: 2vw;
+  height: 2vw;
 }

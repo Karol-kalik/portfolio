@@ -9,7 +9,6 @@
   flex-wrap: wrap;
   min-height: 100vh;
   justify-content: space-between;
-
 }
 
 .info {
@@ -25,14 +24,14 @@ h1.start.left {
   margin: 0;
   padding: 0;
   transform: translate(-100%, 0);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 h1.start.right {
   display: block;
   margin: 0;
   transform: translate(150%, 0);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 p.start {
@@ -40,7 +39,7 @@ p.start {
   padding: 0;
   font-size: 22px;
   transform: scale(0);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 p.start.move {
@@ -81,7 +80,6 @@ button i.fas.fa-arrow-down:hover {
 }
 
 @keyframes move {
-
   0% {
     top: -20%;
   }
@@ -115,7 +113,7 @@ ul {
   padding: 0;
   margin: 0;
   transform: scale(0);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 ul.move {
@@ -123,3 +121,32 @@ ul.move {
 }
 
 /* KONIEC PIERWSZEGO WIDOKU STRONY STARTOWEJ */
+
+.scroller__navigation {
+  z-index: 5;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroller__navigation ul {
+  list-style: none;
+  transform: scale(1);
+}
+
+.scroller__navigation ul li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d44638ad;
+  cursor: pointer;
+}
+
+.scroller__navigation ul li.active {
+  background-color: #B23121;
+}
+
+.scroller__navigation ul li+li {
+  margin-top: 10px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import $ from "jquery";
 import StartPageTwo from "./StartPageTwo";
+import "../Scroller";
 
 const handleButtonClick = function () {
   const windowHeight = $(window).height();

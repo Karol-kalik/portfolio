@@ -19,13 +19,17 @@ class Scroller {
   listenScroll(e) {
     if (this.isThrottled) return;
     this.isThrottled = true;
-    setTimeout(() => {
-      this.isThrottled = false;
-    }, 500);
+    if (this.sections.length === 0) {
+      this.listenScroll(e)
+    } else {
+      setTimeout(() => {
+        this.isThrottled = false;
+      }, 1000);
 
-    const direction = e.deltaY > 0 ? 1 : -1;
+      const direction = e.deltaY > 0 ? 1 : -1;
 
-    this.scroll(direction);
+      this.scroll(direction);
+    }
   }
   scroll(direction) {
     if (direction === 1) {
@@ -43,6 +47,8 @@ class Scroller {
 
   scrollToCurrentSection() {
     this.selectActiveNavItem();
+    if (this.sections.length === 0) {}
+
     this.sections[this.currentSectionIndex].scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -64,7 +70,7 @@ class Scroller {
     });
 
     this.navigationContainer.appendChild(list);
-    document.body.appendChild(this.navigationContainer);
+    document.querySelector("#root").appendChild(this.navigationContainer);
     this.selectActiveNavItem();
   }
 
@@ -82,11 +88,16 @@ class Scroller {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth < 1024 || window.innerWidth < 1100) {
+  if (window.innerWidth < 1024 || window.innerHeight < 700) {
     return;
   } else {
     const scroller = new Scroller();
-    document.addEventListener("wheel", (event) => scroller.listenScroll(event));
+
+    document.addEventListener("wheel", (event) => {
+      scroller.listenScroll(event)
+    });
+
+
     document.addEventListener("keydown", (e) => {
       switch (e.keyCode) {
         case 40:
