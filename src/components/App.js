@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 import { HashRouter } from "react-router-dom";
-import Loader from './Loader';
+import Loader from "./Loader";
 import Navigation from "./Navigation";
 import Page from "./Page";
 import Footer from "./Footer";
-import '../style/App.css';
-import '../phonStyle/App.css';
-import '../style/ico.css';
-
-
-
+import "../style/App.css";
+import "../phonStyle/App.css";
+import "../style/ico.css";
+import "../Scroller";
 function App() {
   return (
     <HashRouter basename="/">

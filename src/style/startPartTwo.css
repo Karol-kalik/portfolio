@@ -1,16 +1,17 @@
-.frontPageTwo{
+.frontPageTwo {
   display: flex;
   min-width: 100vw;
-  min-height: 84vh;
+  min-height: 100vh;
 }
 
-.startPartTwoLeft{
+.startPartTwoLeft {
   min-width: 50vw;
   min-height: 85vh;
   overflow: hidden;
   position: relative;
 }
-.slash{
+
+.slash {
   position: absolute;
   right: 0;
   top: 0;
@@ -18,19 +19,22 @@
   height: 150vh;
   background-color: black;
 }
-div.slashBox{
+
+.slashBox {
   position: absolute;
   right: 0;
   top: 0;
   width: 80vw;
   height: 150vh;
   background-color: white;
-  transform:rotate(25deg)translate(-50vw, -34vh);
+  transform: rotate(25deg)translate(-50vw, -34vh);
   transition: transform 0.5s ease-in-out;
 }
-div.slashBox.move{
-transform:rotate(25deg) translate(-20vw, -34vh);
+
+.slashBox.move {
+  transform: rotate(25deg) translate(-20vw, -34vh);
 }
+
 img.stonks {
   position: absolute;
   z-index: 1;
@@ -43,17 +47,20 @@ img.stonks {
 img.stonks.move {
   opacity: 1;
 }
-.startPartTwoRight{
-  padding-top: 10vh ;
+
+.startPartTwoRight {
+  padding-top: 10vh;
   min-width: 50vw;
   text-align: center;
 }
-.startTwoInfo{
-  transform:translate(100%, 0%);
+
+.startTwoInfo {
+  transform: translate(100%, 0%);
   transition: transform 0.5s ease-in-out;
 }
-.startTwoInfo.move{
-  transform:translate(0, 0);
+
+.startTwoInfo.move {
+  transform: translate(0, 0);
 }
 
 .skills {
@@ -66,14 +73,15 @@ img.stonks.move {
 
 }
 
-div.skills span img{
+.skills span img {
   padding: 2vh 2vw;
   width: 5vw;
   height: 5vw;
-    transform: scale(0);
-    transition: all 0.4s ease-in-out;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
 }
-div.skills span img.move {
+
+.skills span img.move {
   transform: scale(1);
 }
 
@@ -85,6 +93,7 @@ div.skills span img.move {
   position: relative;
   display: inline-block;
 }
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 5vw;
@@ -101,6 +110,7 @@ div.skills span img.move {
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -112,6 +122,7 @@ div.skills span img.move {
   border-color: #555 transparent transparent;
   transform: rotate(180deg);
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
