@@ -102,7 +102,7 @@ button i.fas.fa-arrow-down:hover {
 .line {
   position: absolute;
   left: -11vh;
-  bottom: 0;
+  bottom: 9vh;
   width: 100vw;
   background-color: rgb(94, 93, 93);
   height: 5px;

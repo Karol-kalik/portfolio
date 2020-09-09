@@ -1,6 +1,5 @@
 class Scroller {
   constructor() {
-    const main = document.querySelector("#firstPage");
     this.sections = document.querySelectorAll("section");
     const sectionsArr = [...this.sections];
     const currentSectionIndex = sectionsArr.findIndex(this.isScrolledIntoView);
@@ -83,18 +82,20 @@ class Scroller {
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
-  const scroller = new Scroller();
-  document.addEventListener("wheel", (event) => scroller.listenScroll(event));
-  document.addEventListener("swipeUp", () => scroller.scroll(1));
-  document.addEventListener("swipeDown", () => scroller.scroll(-1));
-  document.addEventListener("keydown", (e) => {
-    switch (e.keyCode) {
-      case 40:
-        return scroller.scroll(1);
-      case 38:
-        return scroller.scroll(-1);
-      default:
-        return;
-    }
-  });
+  if (window.innerWidth < 1024 || window.innerWidth < 1100) {
+    return;
+  } else {
+    const scroller = new Scroller();
+    document.addEventListener("wheel", (event) => scroller.listenScroll(event));
+    document.addEventListener("keydown", (e) => {
+      switch (e.keyCode) {
+        case 40:
+          return scroller.scroll(1);
+        case 38:
+          return scroller.scroll(-1);
+        default:
+          return;
+      }
+    });
+  }
 });
